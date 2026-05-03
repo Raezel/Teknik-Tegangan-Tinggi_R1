@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak — TechVolt Corp</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,600;0,700;0,800;1,700&display=swap"/>
+  <style>
+    .page-hero { background: linear-gradient(135deg, var(--navy), var(--dark-blue)); padding: 8rem 4rem 4rem; text-align: center; position: relative; overflow: hidden; }
+    .page-hero::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(0,200,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,200,255,0.05) 1px, transparent 1px); background-size: 60px 60px; }
+    .breadcrumb { font-family: var(--font-text); font-size: 0.8rem; color: var(--gray); margin-bottom: 1rem; position: relative; }
+    .breadcrumb a { color: var(--cyan); }
+    .page-hero h1 { font-family: var(--font-display); font-size: clamp(3rem, 6vw, 5rem); color: var(--white); position: relative; }
+    .page-hero h1 em { color: var(--cyan); font-style: normal; }
+
+    .contact-section { display: grid; grid-template-columns: 1fr 1.5fr; gap: 5rem; padding: 5rem 4rem; }
+
+    .contact-info h2 { font-family: var(--font-display); font-size: 2rem; color: var(--navy); margin-bottom: 1rem; }
+    .contact-info h2 em { color: var(--cyan); font-style: normal; }
+    .contact-info p { font-family: var(--font-text); font-size: 0.9rem; color: var(--dark-gray); line-height: 1.7; margin-bottom: 2.5rem; }
+
+    .contact-cards { display: flex; flex-direction: column; gap: 1rem; }
+    .contact-card {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 1.2rem; border-radius: 12px;
+      background: var(--light); border: 1px solid #E2E8F0;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .contact-card:hover { border-color: var(--cyan); box-shadow: 0 4px 15px rgba(0,200,255,0.1); }
+    .contact-card-icon {
+      width: 46px; height: 46px;
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      border-radius: 10px; display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; flex-shrink: 0;
+    }
+    .contact-card strong { display: block; font-family: var(--font-body); font-size: 1rem; font-weight: 700; color: var(--navy); }
+    .contact-card span { font-family: var(--font-text); font-size: 0.82rem; color: var(--gray); }
+
+    .contact-form { background: var(--light); border-radius: 20px; padding: 2.5rem; border: 1px solid #E2E8F0; }
+    .contact-form h3 { font-family: var(--font-display); font-size: 1.8rem; color: var(--navy); margin-bottom: 2rem; letter-spacing: 1px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label { display: block; font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; color: var(--navy); margin-bottom: 0.5rem; }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%; padding: 0.8rem 1rem;
+      font-family: var(--font-text); font-size: 0.9rem;
+      border: 1px solid #CBD5E1; border-radius: 8px;
+      background: var(--white); color: var(--navy);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+      border-color: var(--cyan);
+      box-shadow: 0 0 0 3px rgba(0,200,255,0.1);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-submit { width: 100%; padding: 1rem; font-family: var(--font-display); font-size: 1.2rem; letter-spacing: 2px; cursor: pointer; border: none; }
+
+    .success-msg { display: none; background: rgba(0,200,255,0.1); border: 1px solid var(--cyan); border-radius: 8px; padding: 1rem; font-family: var(--font-text); font-size: 0.9rem; color: var(--navy); margin-top: 1rem; text-align: center; }
+    .success-msg.show { display: block; }
+
+    @media (max-width: 768px) {
+      .contact-section { grid-template-columns: 1fr; padding: 3rem 1.5rem; gap: 2rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .page-hero { padding: 6rem 1.5rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <span>📧 info@techvolt.co.id</span>
+    <span>📍 Jl. Sudirman No. 88, Makassar 90234</span>
+    <div class="topbar-social"><a href="#">FB</a><a href="#">TW</a><a href="#">IG</a><a href="#">IN</a></div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="logo"><div class="logo-icon">⚡</div><span>TechVolt<em>Corp</em></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Tentang Kami</a></li>
+      <li class="has-dropdown"><a href="services.html">Layanan ▾</a>
+        <ul class="dropdown">
+          <li><a href="services.html#consulting">Konsultasi</a></li>
+          <li><a href="services.html#engineering">Teknik</a></li>
+        </ul>
+      </li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" class="active">Kontak</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta"><span class="cta-icon">📞</span><div><small>Hubungi Kami</small><strong>+62 411-348-987</strong></div></a>
+    <button class="hamburger" id="hamburger">☰</button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a><a href="about.html">Tentang Kami</a>
+    <a href="services.html">Layanan</a><a href="blog.html">Blog</a><a href="contact.html">Kontak</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Kontak</div>
+    <h1>Hubungi <em>Kami</em></h1>
+  </section>
+
+  <div class="contact-section">
+    <div class="contact-info">
+      <div class="section-label">KONTAK KAMI</div>
+      <h2>Kami Siap <em>Membantu</em></h2>
+      <p>Jangan ragu untuk menghubungi tim profesional kami. Kami berkomitmen merespons setiap pertanyaan dalam waktu 24 jam kerja.</p>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="contact-card-icon">📍</div>
+          <div><strong>Alamat Kantor</strong><span>Jl. Sudirman No. 88, Makassar 90234</span></div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon">📞</div>
+          <div><strong>Telepon</strong><span>+62 411-348-987</span></div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon">📧</div>
+          <div><strong>Email</strong><span>info@techvolt.co.id</span></div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon">🕐</div>
+          <div><strong>Jam Operasional</strong><span>Senin – Jumat: 08.00 – 17.00 WITA</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3>KIRIM PESAN</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nama Lengkap *</label>
+          <input type="text" id="name" placeholder="John Doe" />
+        </div>
+        <div class="form-group">
+          <label>Email *</label>
+          <input type="email" id="email" placeholder="john@perusahaan.com" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nomor Telepon</label>
+          <input type="tel" id="phone" placeholder="+62 8xx xxxx xxxx" />
+        </div>
+        <div class="form-group">
+          <label>Topik</label>
+          <select id="topic">
+            <option value="">Pilih Topik</option>
+            <option>Konsultasi Keuangan</option>
+            <option>Teknik Elektro</option>
+            <option>Manajemen Proyek</option>
+            <option>Infrastruktur</option>
+            <option>Riset & Inovasi</option>
+            <option>Lainnya</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Subjek *</label>
+        <input type="text" id="subject" placeholder="Subjek pesan Anda..." />
+      </div>
+      <div class="form-group">
+        <label>Pesan *</label>
+        <textarea id="message" placeholder="Tuliskan pesan atau pertanyaan Anda di sini..."></textarea>
+      </div>
+      <button class="btn-primary form-submit" onclick="submitForm()">KIRIM PESAN →</button>
+      <div class="success-msg" id="successMsg">✅ Pesan Anda berhasil terkirim! Tim kami akan menghubungi Anda segera.</div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><div class="logo-icon">⚡</div><span>TechVolt<em>Corp</em></span></a>
+        <p>Solusi teknik elektro dan infrastruktur ketenagalistrikan terdepan.</p>
+        <div class="footer-socials"><a href="#">FB</a><a href="#">TW</a><a href="#">IG</a><a href="#">IN</a></div>
+      </div>
+      <div class="footer-links"><h4>Perusahaan</h4><a href="about.html">Tentang Kami</a><a href="about.html#team">Tim Kami</a><a href="blog.html">Blog</a></div>
+      <div class="footer-links"><h4>Layanan</h4><a href="services.html#consulting">Konsultasi</a><a href="services.html#engineering">Teknik Elektro</a><a href="services.html#infrastructure">Infrastruktur</a></div>
+      <div class="footer-contact-info"><h4>Kontak</h4><p>📍 Jl. Sudirman No. 88, Makassar</p><p>📞 +62 411-348-987</p><p>📧 info@techvolt.co.id</p></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 TechVolt Corp. Hak cipta dilindungi.</span>
+      <div class="footer-bottom-links"><a href="#">Privasi</a><a href="#">Syarat & Ketentuan</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    function submitForm() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      if (!name || !email || !message) {
+        alert('Mohon lengkapi field yang wajib diisi (*)');
+        return;
+      }
+      document.getElementById('successMsg').classList.add('show');
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('phone').value = '';
+      document.getElementById('subject').value = '';
+      document.getElementById('message').value = '';
+    }
+  </script>
+</body>
+</html>
