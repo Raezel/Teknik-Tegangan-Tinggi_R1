@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Praktikum — Lab Teknik Tegangan Tinggi Unhas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,600;0,700;0,800;1,700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="topbar"><div class="topbar-inner"><span class="topbar-link">🏛️ Departemen Teknik Elektro — Fakultas Teknik — Universitas Hasanuddin</span><a href="contact.html" class="topbar-cta">HUBUNGI KAMI →</a></div></div>
+<nav class="navbar" id="navbar"><div class="nav-inner">
+  <a href="index.html" class="logo"><div class="logo-bolt">⚡</div><div class="logo-text">LAB TTT<span>UNHAS</span></div></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Beranda</a></li><li><a href="about.html">Tentang Lab</a></li>
+    <li><a href="praktikum.html" class="active">Praktikum</a></li>
+    <li><a href="alat.html">Alat Lab</a></li><li><a href="jurnal.html">Jurnal & Dokumen</a></li><li><a href="contact.html">Kontak</a></li>
+  </ul>
+  <div class="nav-actions"><a href="jurnal.html" class="nav-contact-btn">AKSES JURNAL <span class="nav-arrow">→</span></a></div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</div></nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Beranda</a><a href="about.html">Tentang Lab</a><a href="praktikum.html">Praktikum</a><a href="alat.html">Alat Lab</a><a href="jurnal.html">Jurnal & Dokumen</a><a href="contact.html">Kontak</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Beranda</a> / Praktikum</div>
+    <h1>Modul <em>Praktikum</em></h1>
+    <p>6 modul percobaan lengkap dengan penjelasan, perlengkapan, respons umum, dan akses jurnal via Google Drive</p>
+  </div>
+</section>
+
+<section class="prak-detail-section">
+
+  <!-- 01 TTT AC -->
+  <div id="ttt-ac" class="prak-detail-item open">
+    <div class="prak-detail-header">
+      <div class="prak-detail-num">01</div>
+      <div class="prak-detail-title">
+        <h3>⚡ Tegangan Tinggi AC</h3>
+        <span>Pengujian dielektrik dan kekuatan isolasi menggunakan tegangan bolak-balik</span>
+      </div>
+      <span class="prak-detail-toggle">▼</span>
+    </div>
+    <div class="prak-detail-body">
+      <div class="prak-tabs">
+        <button class="prak-tab active" data-tab="penjelasan">📖 Penjelasan</button>
+        <button class="prak-tab" data-tab="perlengkapan">🔧 Perlengkapan</button>
+        <button class="prak-tab" data-tab="respons">💬 Respons Umum</button>
+        <button class="prak-tab" data-tab="dokumen">📁 Dokumen</button>
+      </div>
+
+      <div class="prak-tab-content active" data-content="penjelasan">
+        <div class="prak-info-grid">
+          <div class="prak-info-box">
+            <h4>🎯 Tujuan Praktikum</h4>
+            <ul>
+              <li>Memahami karakteristik isolasi pada tegangan tinggi AC</li>
+              <li>Menentukan tegangan tembus (breakdown voltage) material isolasi</li>
+              <li>Menganalisis faktor daya dielektrik (tan δ)</li>
+              <li>Mempelajari fenomena korona pada tegangan tinggi AC</li>
+            </ul>
+          </div>
+          <div class="prak-info-box">
+            <h4>📚 Dasar Teori</h4>
+            <p>Tegangan tinggi AC digunakan untuk menguji kekuatan dielektrik material isolasi. Pada tegangan tertentu (tegangan tembus), isolasi akan gagal dan terjadi lompatan api. Faktor daya dielektrik (tan δ) digunakan sebagai indikator kualitas isolasi — semakin kecil nilainya, semakin baik kualitas isolasi tersebut.</p>
+          </div>
+          <div class="prak-info-box">
+            <h4>⚙️ Prosedur Singkat</h4>
+            <ul>
+              <li>Pasang sampel isolasi pada elektroda bola</li>
+              <li>Naikkan tegangan secara bertahap (step-up method)</li>
+              <li>Catat tegangan tembus dan arus bocor</li>
+              <li>Ukur faktor daya dielektrik menggunakan Schering bridge</li>
+              <li>Analisis dan bandingkan dengan standar IEC 60156</li>
+            </ul>
+          </div>
+          <div class="prak-info-box">
+            <h4>⚠️ Perhatian K3</h4>
+            <ul>
+              <li>Wajib menggunakan APD lengkap (sarung tangan HV, sepatu isolasi)</li>
+              <li>Pastikan grounding terpasang sebelum menyentuh peralatan</li>
+              <li>Satu orang operator, satu orang pengawas</li>
+              <li>Jangan berdiri di area berbahaya saat pengujian berlangsung</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="prak-tab-content" data-content="perlengkapan">
+        <div class="prak-info-grid">
+          <div class="prak-info-box">
+            <h4>🔌 Peralatan Utama</h4>
+            <ul>
+              <li>High Voltage AC Transformer (0–100 kV)</li>
+              <li>Elektroda bola (sphere gap) sesuai IEC 60052</li>
+              <li>Schering Bridge untuk pengukuran tan δ</li>
+              <li>Osiloskop digital 100 MHz</li>
+              <li>Voltmeter HV (kapasitif divider)</li>
+            </ul>
+          </div>
+          <div class="prak-info-box">
+            <h4>🧪 Bahan & Sampel</h4>
+            <ul>
+              <li>Minyak transformator (transformer oil)</li>
+              <li>Sampel isolasi padat (epoxy resin, PVC)</li>
+              <li>Elektroda tembaga dan kuningan</li>
+              <li>Kertas saring (filter paper)</li>
+              <li>Alkohol isopropil untuk pembersihan</li>
+            </ul>
+          </div>
+          <div class="prak-info-box">
+            <h4>🦺 APD yang Diperlukan</h4>
+            <ul>
+              <li>Sarung tangan isolasi kelas 2 (min. 17 kV)</li>
+              <li>Sepatu safety berisolasi</li>
+              <li>Kacamata pelindung</li>
+              <li>Jas lab / baju kerja</li>
+              <li>Helm safety (jika diperlukan)</li>
+            </ul>
+          </div>
+          <div class="prak-info-box">
+            <h4>📋 Formulir & Lembar Data</h4>
+            <ul>
+              <li>Lembar data pengujian tegangan tembus</li>
+              <li>Tabel pengukuran arus bocor</li>
+              <li>Form hasil pengukuran Schering bridge</li>
+              <li>Lembar analisis dan kesimpulan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="prak-tab-content" data-content="respons">
+        <div class="prak-info-grid">
+          <div class="prak-info-box">
+            <h4>❓ Pertanyaan yang Sering Diajukan</h4>
+            <ul>
+              <li><strong>Q: Mengapa tegangan dinaikkan secara bertahap?</strong><br/>A: Untuk mengamati proses ionisasi dan mencegah kerusakan peralatan akibat surja tegangan.</li>
+              <li><strong>Q: Apa pengaruh suhu terhadap tegangan tembus?</strong><br/>A: Suhu tinggi menurunkan viskositas minyak dan mengurangi kekuatan dielektrik.</li>
+              <li><strong>Q: Kenapa nilai tan δ harus sekecil mungkin?</strong><br/>A: Nilai tan δ kecil menunjukkan rugi-rugi dielektrik yang rendah dan isolasi yang masih baik.</li>
+            </ul>
+          </div>
+          <div class="prak-info-box">
+            <h4>📊 Hasil yang Diharapkan</h4>
+            <ul>
+              <li>Tegangan tembus minyak transformator baru: &gt; 30 kV (IEC 60156)</li>
+              <li>Faktor daya dielektrik (tan δ): &lt; 0.005 pada 90°C</li>
+              <li>Arus bocor pada tegangan operasi: &lt; 1 mA</li>
+              <li>Grafik V-I yang linear sebelum tembus</li>
+            </ul>
+          </div>
+          <div class="prak-info-box">
+            <h4>⚡ Fenomena yang Teramati</h4>
+            <ul>
+              <li>Korona: cahaya kebiruan di sekitar elektroda pada tegangan tinggi</li>
+              <li>Tembus: percikan api dan bunyi ledakan saat isolasi gagal</li>
+              <li>Treeing: pola cabang pada isolasi padat setelah tembus parsial</li>
+            </ul>
+          </div>
+          <div class="prak-info-box">
+            <h4>🔧 Masalah Umum & Solusi</h4>
+            <ul>
+              <li>Tegangan tembus terlalu rendah → cek kebersihan elektroda dan sampel</li>
+              <li>Arus bocor tinggi → periksa kualitas minyak (moisture content)</li>
+              <li>Hasil tidak konsisten → ulang pengujian, minimal 6 kali sesuai standar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="prak-tab-content" data-content="dokumen">
+        <p style="font-size:.88rem;color:var(--text-gray);margin-bottom:1.5rem">Klik tombol di bawah untuk mengakses dokumen melalui Google Drive. Pastikan Anda sudah login dengan akun email universitas.</p>
+        <div class="gdrive-links-grid">
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📄</span> Jurnal Lengkap TTT AC</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📋</span> Modul Praktikum</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📊</span> Template Laporan</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">🦺</span> Panduan K3</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📐</span> Lembar Data</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 02 TTT DC -->
+  <div id="ttt-dc" class="prak-detail-item">
+    <div class="prak-detail-header">
+      <div class="prak-detail-num">02</div>
+      <div class="prak-detail-title"><h3>🔋 Tegangan Tinggi DC</h3><span>Karakteristik isolasi dan arus bocor pada tegangan searah</span></div>
+      <span class="prak-detail-toggle">▼</span>
+    </div>
+    <div class="prak-detail-body">
+      <div class="prak-tabs">
+        <button class="prak-tab active" data-tab="penjelasan2">📖 Penjelasan</button>
+        <button class="prak-tab" data-tab="perlengkapan2">🔧 Perlengkapan</button>
+        <button class="prak-tab" data-tab="respons2">💬 Respons Umum</button>
+        <button class="prak-tab" data-tab="dokumen2">📁 Dokumen</button>
+      </div>
+      <div class="prak-tab-content active" data-content="penjelasan2">
+        <div class="prak-info-grid">
+          <div class="prak-info-box"><h4>🎯 Tujuan Praktikum</h4><ul><li>Memahami karakteristik isolasi pada tegangan DC</li><li>Mengukur resistivitas volume dan permukaan isolasi</li><li>Menentukan indeks polarisasi (PI) dan indeks penyerapan (DAR)</li><li>Menganalisis arus bocor sebagai fungsi tegangan</li></ul></div>
+          <div class="prak-info-box"><h4>📚 Dasar Teori</h4><p>Pada tegangan DC, arus yang mengalir melalui isolasi terdiri dari arus konduksi, arus polarisasi, dan arus absorpsi. Indeks Polarisasi (PI = R10min/R1min) digunakan untuk mengevaluasi kondisi isolasi — nilai PI &gt; 2 menunjukkan isolasi dalam kondisi baik.</p></div>
+          <div class="prak-info-box"><h4>⚙️ Prosedur Singkat</h4><ul><li>Ukur resistansi isolasi dengan Megger pada 500V, 1kV, 5kV</li><li>Lakukan pengujian step voltage untuk menentukan knee point</li><li>Hitung nilai PI dan DAR dari hasil pengukuran</li><li>Plot grafik arus vs waktu dan arus vs tegangan</li></ul></div>
+          <div class="prak-info-box"><h4>⚠️ Perhatian K3</h4><ul><li>Discharge kapasitor setelah pengujian selesai</li><li>Jangan menyentuh terminal sebelum discharge sempurna</li><li>Gunakan discharge rod yang terinsulasi</li><li>Catat waktu charging untuk estimasi waktu discharge</li></ul></div>
+        </div>
+      </div>
+      <div class="prak-tab-content" data-content="perlengkapan2">
+        <div class="prak-info-grid">
+          <div class="prak-info-box"><h4>🔌 Peralatan Utama</h4><ul><li>DC High Voltage Power Supply (0–100 kV DC)</li><li>Megger Digital (500V – 10kV)</li><li>Picoammeter untuk pengukuran arus bocor</li><li>Elektroda Rogowski-Burch (guard electrode system)</li><li>Kapasitor penyimpan energi</li></ul></div>
+          <div class="prak-info-box"><h4>🧪 Bahan & Sampel</h4><ul><li>Kabel tegangan menengah (sample potongan)</li><li>Isolasi polimer (XLPE, EPDM)</li><li>Minyak isolasi</li><li>Discharge rod dan safety grounding</li></ul></div>
+          <div class="prak-info-box"><h4>🦺 APD yang Diperlukan</h4><ul><li>Sarung tangan isolasi HV</li><li>Sepatu safety berisolasi</li><li>Face shield</li><li>Jas lab anti-static</li></ul></div>
+          <div class="prak-info-box"><h4>📋 Formulir</h4><ul><li>Lembar pengukuran resistansi isolasi</li><li>Tabel perhitungan PI dan DAR</li><li>Grafik arus bocor vs waktu</li><li>Form penilaian kondisi isolasi</li></ul></div>
+        </div>
+      </div>
+      <div class="prak-tab-content" data-content="respons2">
+        <div class="prak-info-grid">
+          <div class="prak-info-box"><h4>❓ FAQ</h4><ul><li><strong>Q: Apa perbedaan PI dan DAR?</strong><br/>A: PI = R10/R1 (menit), DAR = R60s/R30s. Keduanya mengindikasikan kondisi isolasi berdasarkan perbandingan resistansi.</li><li><strong>Q: Kenapa tegangan DC lebih berbahaya dari AC?</strong><br/>A: Kapasitor terisi dan menyimpan energi yang dapat menyebabkan shock meskipun sumber sudah dimatikan.</li></ul></div>
+          <div class="prak-info-box"><h4>📊 Hasil yang Diharapkan</h4><ul><li>PI &gt; 2.0: Isolasi baik (excellent)</li><li>PI 1.0–2.0: Isolasi perlu perhatian</li><li>PI &lt; 1.0: Isolasi rusak, perlu penggantian</li><li>DAR &gt; 1.25: kondisi baik</li></ul></div>
+          <div class="prak-info-box"><h4>⚡ Fenomena Teramati</h4><ul><li>Arus polarisasi menurun secara eksponensial terhadap waktu</li><li>Space charge accumulation pada isolasi polimer</li><li>Peningkatan arus bocor saat isolasi degradasi</li></ul></div>
+          <div class="prak-info-box"><h4>🔧 Masalah & Solusi</h4><ul><li>Arus bocor berfluktuasi → periksa koneksi guard electrode</li><li>PI sangat rendah → isolasi mungkin lembab, lakukan pengeringan</li><li>Discharge lambat → gunakan discharge resistor yang sesuai</li></ul></div>
+        </div>
+      </div>
+      <div class="prak-tab-content" data-content="dokumen2">
+        <p style="font-size:.88rem;color:var(--text-gray);margin-bottom:1.5rem">Akses dokumen praktikum Tegangan Tinggi DC melalui Google Drive berikut:</p>
+        <div class="gdrive-links-grid">
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📄</span> Jurnal Lengkap TTT DC</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📋</span> Modul Praktikum</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📊</span> Template Laporan</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📐</span> Lembar Data</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 03 IMPULS -->
+  <div id="ttt-impuls" class="prak-detail-item">
+    <div class="prak-detail-header">
+      <div class="prak-detail-num">03</div>
+      <div class="prak-detail-title"><h3>💥 Tegangan Impuls</h3><span>Simulasi surja petir dan surja hubung, koordinasi isolasi</span></div>
+      <span class="prak-detail-toggle">▼</span>
+    </div>
+    <div class="prak-detail-body">
+      <div class="prak-tabs">
+        <button class="prak-tab active" data-tab="p3a">📖 Penjelasan</button>
+        <button class="prak-tab" data-tab="p3b">🔧 Perlengkapan</button>
+        <button class="prak-tab" data-tab="p3c">💬 Respons Umum</button>
+        <button class="prak-tab" data-tab="p3d">📁 Dokumen</button>
+      </div>
+      <div class="prak-tab-content active" data-content="p3a">
+        <div class="prak-info-grid">
+          <div class="prak-info-box"><h4>🎯 Tujuan</h4><ul><li>Membangkitkan dan mengukur tegangan impuls standar (1.2/50 μs dan 8/20 μs)</li><li>Menentukan tegangan tembus impuls (BIL) material isolasi</li><li>Mempelajari pengaruh polaritas terhadap tegangan tembus</li><li>Studi koordinasi isolasi sistem tenaga listrik</li></ul></div>
+          <div class="prak-info-box"><h4>📚 Dasar Teori</h4><p>Tegangan impuls standar surja petir memiliki waktu muka 1.2 μs dan waktu ekor 50 μs (1.2/50 μs). Generator Marx digunakan untuk membangkitkan tegangan impuls sangat tinggi dengan mengisi kapasitor secara paralel dan melepaskannya secara seri.</p></div>
+          <div class="prak-info-box"><h4>⚙️ Prosedur</h4><ul><li>Set parameter generator Marx (R1, R2, C)</li><li>Kalibrasi kapasitif divider</li><li>Lakukan pengujian dengan metode up-and-down (IEC 60060)</li><li>Analisis bentuk gelombang dengan osiloskop digital</li></ul></div>
+          <div class="prak-info-box"><h4>⚠️ K3 Khusus</h4><ul><li>Area clearance minimal 3 meter dari generator</li><li>Pengujian HANYA dengan 2+ personel</li><li>Tanda bahaya dan barricade harus terpasang</li><li>Prosedur lockout/tagout wajib diterapkan</li></ul></div>
+        </div>
+      </div>
+      <div class="prak-tab-content" data-content="p3b">
+        <div class="prak-info-grid">
+          <div class="prak-info-box"><h4>🔌 Peralatan</h4><ul><li>Marx Impulse Generator (hingga 400 kV puncak)</li><li>Kapasitif Divider rasio 1000:1</li><li>Osiloskop Digital 500 MHz, 2 GS/s</li><li>Elektroda bola dan elektroda jarum-bidang</li><li>Software analisis bentuk gelombang</li></ul></div>
+          <div class="prak-info-box"><h4>🧪 Sampel Uji</h4><ul><li>Isolator porselen dan polimer</li><li>Kabel dan terminasi kabel</li><li>Transformator miniatur</li><li>Elektroda bola untuk kalibrasi</li></ul></div>
+          <div class="prak-info-box"><h4>🦺 APD Wajib</h4><ul><li>Ear protection (tingkat kebisingan tinggi)</li><li>Face shield balistik</li><li>Sarung tangan HV kelas 4</li><li>Baju tahan api (arc flash)</li></ul></div>
+          <div class="prak-info-box"><h4>📋 Formulir</h4><ul><li>Lembar data parameter generator</li><li>Tabel hasil pengujian up-and-down</li><li>Form analisis bentuk gelombang</li><li>Laporan koordinasi isolasi</li></ul></div>
+        </div>
+      </div>
+      <div class="prak-tab-content" data-content="p3c">
+        <div class="prak-info-grid">
+          <div class="prak-info-box"><h4>❓ FAQ</h4><ul><li><strong>Q: Apa itu 1.2/50 μs?</strong><br/>A: 1.2 μs = waktu muka (front time), 50 μs = waktu ekor (tail time). Ini adalah standar surja petir IEC.</li><li><strong>Q: Mengapa polaritas berpengaruh?</strong><br/>A: Distribusi medan listrik berbeda untuk polaritas positif dan negatif, terutama pada elektroda asimetris.</li></ul></div>
+          <div class="prak-info-box"><h4>📊 Hasil Tipikal</h4><ul><li>BIL isolator 20 kV: sekitar 125 kV puncak</li><li>CFO (Critical Flashover): tegangan 50% probabilitas tembus</li><li>Waktu muka terukur: 1.2 ± 0.36 μs (toleransi IEC)</li></ul></div>
+          <div class="prak-info-box"><h4>⚡ Fenomena</h4><ul><li>Flashover external: lompatan api di permukaan isolator</li><li>Puncture: tembus langsung melalui badan isolator</li><li>Withstand: isolator bertahan tanpa tembus</li></ul></div>
+          <div class="prak-info-box"><h4>🔧 Troubleshooting</h4><ul><li>Gelombang tidak standar → atur ulang R1, R2, C generator</li><li>Pre-strike terlalu sering → turunkan tegangan pengisian</li><li>Divider tidak linear → kalibrasi ulang dengan bola standar</li></ul></div>
+        </div>
+      </div>
+      <div class="prak-tab-content" data-content="p3d">
+        <p style="font-size:.88rem;color:var(--text-gray);margin-bottom:1.5rem">Akses dokumen praktikum Tegangan Impuls:</p>
+        <div class="gdrive-links-grid">
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📄</span> Jurnal Tegangan Impuls</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📋</span> Modul Praktikum</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📊</span> Template Laporan</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📐</span> Lembar Data</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 04 PD -->
+  <div id="partial-discharge" class="prak-detail-item">
+    <div class="prak-detail-header">
+      <div class="prak-detail-num">04</div>
+      <div class="prak-detail-title"><h3>🔍 Partial Discharge</h3><span>Deteksi dan analisis pelepasan muatan sebagian pada sistem isolasi</span></div>
+      <span class="prak-detail-toggle">▼</span>
+    </div>
+    <div class="prak-detail-body">
+      <div class="prak-tabs">
+        <button class="prak-tab active" data-tab="p4a">📖 Penjelasan</button>
+        <button class="prak-tab" data-tab="p4b">🔧 Perlengkapan</button>
+        <button class="prak-tab" data-tab="p4c">💬 Respons Umum</button>
+        <button class="prak-tab" data-tab="p4d">📁 Dokumen</button>
+      </div>
+      <div class="prak-tab-content active" data-content="p4a">
+        <div class="prak-info-grid">
+          <div class="prak-info-box"><h4>🎯 Tujuan</h4><ul><li>Mendeteksi dan mengukur partial discharge (PD) pada isolasi</li><li>Menganalisis pola PD (PRPD - Phase Resolved PD)</li><li>Menentukan tingkat keparahan degradasi isolasi</li><li>Membedakan jenis cacat isolasi dari pola PD</li></ul></div>
+          <div class="prak-info-box"><h4>📚 Dasar Teori</h4><p>Partial Discharge adalah pelepasan muatan lokal yang tidak menembus seluruh isolasi. PD terjadi di rongga (void), permukaan, atau ujung konduktor. Pengukuran PD dalam pC (pikoCoulomb) sesuai standar IEC 60270 digunakan untuk mengevaluasi integritas isolasi.</p></div>
+          <div class="prak-info-box"><h4>⚙️ Prosedur</h4><ul><li>Set up rangkaian pengukuran PD sesuai IEC 60270</li><li>Kalibrasi sistem dengan injector kalibrasi</li><li>Naikkan tegangan hingga PDIV (PD Inception Voltage)</li><li>Rekam dan analisis pola PRPD</li></ul></div>
+          <div class="prak-info-box"><h4>⚠️ K3</h4><ul><li>Ruang pengujian harus bebas EMI (Faraday cage)</li><li>Kabel koaksial tershielded untuk mengurangi noise</li><li>Grounding sistem yang sempurna</li><li>Jangan ada peralatan elektronik tidak terlindungi di sekitar area</li></ul></div>
+        </div>
+      </div>
+      <div class="prak-tab-content" data-content="p4b">
+        <div class="prak-info-grid">
+          <div class="prak-info-box"><h4>🔌 Peralatan</h4><ul><li>PD Detector dan Analyzer (IEC 60270 compliant)</li><li>Calibration Injector (50 pC, 100 pC)</li><li>Coupling Capacitor (1000 pF, 100 kV)</li><li>Measurement Impedance (Zm)</li><li>Shielded Room (Faraday Cage)</li></ul></div>
+          <div class="prak-info-box"><h4>🧪 Sampel</h4><ul><li>Kabel XLPE dengan void buatan</li><li>Transformator miniatur</li><li>Kapasitor dengan cacat internal</li><li>Sampel epoxy dengan inklusi udara</li></ul></div>
+          <div class="prak-info-box"><h4>🦺 APD</h4><ul><li>Sarung tangan HV</li><li>Sepatu isolasi</li><li>Kacamata pelindung</li></ul></div>
+          <div class="prak-info-box"><h4>📋 Formulir</h4><ul><li>Lembar kalibrasi sistem PD</li><li>Form rekaman PDIV dan PDEV</li><li>Template analisis pola PRPD</li><li>Laporan kondisi isolasi</li></ul></div>
+        </div>
+      </div>
+      <div class="prak-tab-content" data-content="p4c">
+        <div class="prak-info-grid">
+          <div class="prak-info-box"><h4>❓ FAQ</h4><ul><li><strong>Q: Berapa batas PD yang masih aman?</strong><br/>A: Bergantung pada peralatan. Untuk transformator daya, umumnya &lt; 500 pC. Untuk GIS, &lt; 5 pC.</li><li><strong>Q: Apa perbedaan PDIV dan PDEV?</strong><br/>A: PDIV = tegangan awal PD muncul. PDEV = tegangan PD padam saat diturunkan. PDEV &lt; PDIV karena efek memori.</li></ul></div>
+          <div class="prak-info-box"><h4>📊 Hasil Tipikal</h4><ul><li>Internal void: PD muncul di kedua sisi siklus AC, magnitude serupa</li><li>Surface discharge: PD asimetris, lebih besar di satu polaritas</li><li>Corona: PD di polaritas negatif mendominasi (elektroda jarum)</li></ul></div>
+          <div class="prak-info-box"><h4>⚡ Pola PRPD Umum</h4><ul><li>Void: distribusi simetris di 0° dan 180°</li><li>Surface: distribusi asimetris, kluster di satu sisi</li><li>Corona: kluster di sudut fase tertentu</li></ul></div>
+          <div class="prak-info-box"><h4>🔧 Troubleshooting</h4><ul><li>Background noise tinggi → periksa shielding dan grounding</li><li>Tidak ada PD padahal ada cacat → naikkan tegangan bertahap</li><li>Kalibrasi tidak akurat → periksa kapasitansi coupling capacitor</li></ul></div>
+        </div>
+      </div>
+      <div class="prak-tab-content" data-content="p4d">
+        <p style="font-size:.88rem;color:var(--text-gray);margin-bottom:1.5rem">Akses dokumen praktikum Partial Discharge:</p>
+        <div class="gdrive-links-grid">
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📄</span> Jurnal Partial Discharge</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📋</span> Modul Praktikum</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📊</span> Template Laporan</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📐</span> Lembar Data</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 05 PROTEKSI -->
+  <div id="proteksi" class="prak-detail-item">
+    <div class="prak-detail-header">
+      <div class="prak-detail-num">05</div>
+      <div class="prak-detail-title"><h3>🛡️ Sistem Proteksi</h3><span>Pengujian relay proteksi sistem tenaga listrik</span></div>
+      <span class="prak-detail-toggle">▼</span>
+    </div>
+    <div class="prak-detail-body">
+      <div class="prak-tabs">
+        <button class="prak-tab active" data-tab="p5a">📖 Penjelasan</button>
+        <button class="prak-tab" data-tab="p5b">🔧 Perlengkapan</button>
+        <button class="prak-tab" data-tab="p5c">💬 Respons Umum</button>
+        <button class="prak-tab" data-tab="p5d">📁 Dokumen</button>
+      </div>
+      <div class="prak-tab-content active" data-content="p5a">
+        <div class="prak-info-grid">
+          <div class="prak-info-box"><h4>🎯 Tujuan</h4><ul><li>Memahami prinsip kerja relay proteksi arus lebih (OCR)</li><li>Melakukan pengujian dan kalibrasi relay digital</li><li>Menganalisis kurva karakteristik waktu-arus relay</li><li>Studi koordinasi proteksi sistem distribusi</li></ul></div>
+          <div class="prak-info-box"><h4>📚 Dasar Teori</h4><p>Relay proteksi adalah perangkat yang mendeteksi kondisi abnormal dan memberikan sinyal trip ke pemutus daya (CB). Relay arus lebih (OCR) bekerja berdasarkan besarnya arus gangguan — semakin besar arus, semakin cepat relay bekerja (karakteristik invers).</p></div>
+          <div class="prak-info-box"><h4>⚙️ Prosedur</h4><ul><li>Setting relay: Arus pickup, Time Multiplier Setting (TMS)</li><li>Injeksikan arus uji menggunakan relay test set</li><li>Ukur waktu kerja relay pada berbagai kelipatan arus pickup</li><li>Plot kurva t-I dan bandingkan dengan kurva standar IEC</li></ul></div>
+          <div class="prak-info-box"><h4>⚠️ K3</h4><ul><li>Periksa rating tegangan dan arus test set</li><li>Pastikan circuit breaker yang diuji dalam kondisi open</li><li>Jangan bekerja seorang diri pada panel bertegangan</li></ul></div>
+        </div>
+      </div>
+      <div class="prak-tab-content" data-content="p5b">
+        <div class="prak-info-grid">
+          <div class="prak-info-box"><h4>🔌 Peralatan</h4><ul><li>Relay Test Set (OMICRON CMC 356 atau setara)</li><li>Relay Proteksi Digital (OCR, directional, differential)</li><li>Current Transformer (CT) rasio 100:5</li><li>Voltage Transformer (VT) rasio 20kV/100V</li><li>Laptop dengan software analisis relay</li></ul></div>
+          <div class="prak-info-box"><h4>🧪 Relay yang Diuji</h4><ul><li>Relay arus lebih non-directional (IDMT)</li><li>Relay arus lebih arah (Directional OCR)</li><li>Relay diferensial transformator</li><li>Relay jarak (Distance Relay)</li></ul></div>
+          <div class="prak-info-box"><h4>🦺 APD</h4><ul><li>Sarung tangan isolasi (tegangan menengah)</li><li>Kacamata pelindung</li><li>Sepatu safety</li></ul></div>
+          <div class="prak-info-box"><h4>📋 Formulir</h4><ul><li>Lembar setting relay</li><li>Tabel pengukuran waktu kerja</li><li>Form kurva karakteristik</li><li>Laporan evaluasi koordinasi proteksi</li></ul></div>
+        </div>
+      </div>
+      <div class="prak-tab-content" data-content="p5c">
+        <div class="prak-info-grid">
+          <div class="prak-info-box"><h4>❓ FAQ</h4><ul><li><strong>Q: Apa itu TMS?</strong><br/>A: Time Multiplier Setting — faktor pengali yang menggeser kurva t-I ke atas/bawah untuk koordinasi dengan relay lain dalam sistem.</li><li><strong>Q: Kurva apa yang paling umum dipakai?</strong><br/>A: Standard Inverse (SI), Very Inverse (VI), dan Extremely Inverse (EI) sesuai IEC 60255.</li></ul></div>
+          <div class="prak-info-box"><h4>📊 Hasil Tipikal</h4><ul><li>Toleransi waktu kerja relay digital: ± 5%</li><li>Arus pickup: 100–120% dari setting</li><li>Coordinating time interval (CTI): minimal 0.3 detik</li></ul></div>
+          <div class="prak-info-box"><h4>⚡ Fenomena</h4><ul><li>Relay hunting: relay trip berulang karena setting terlalu sensitif</li><li>Relay maloperation: trip tidak seharusnya karena inrush current</li><li>Relay fail-to-trip: relay tidak bekerja karena setting terlalu tinggi</li></ul></div>
+          <div class="prak-info-box"><h4>🔧 Troubleshooting</h4><ul><li>Waktu trip tidak sesuai → cek setting TMS dan Ip</li><li>Relay tidak trip → periksa suplai tegangan auxiliary</li><li>Hasil tidak konsisten → kalibrasi relay test set</li></ul></div>
+        </div>
+      </div>
+      <div class="prak-tab-content" data-content="p5d">
+        <p style="font-size:.88rem;color:var(--text-gray);margin-bottom:1.5rem">Akses dokumen praktikum Sistem Proteksi:</p>
+        <div class="gdrive-links-grid">
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📄</span> Jurnal Sistem Proteksi</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📋</span> Modul Praktikum</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📊</span> Template Laporan</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📐</span> Lembar Data</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 06 GROUNDING -->
+  <div id="grounding" class="prak-detail-item">
+    <div class="prak-detail-header">
+      <div class="prak-detail-num">06</div>
+      <div class="prak-detail-title"><h3>🌍 Sistem Pembumian</h3><span>Pengukuran resistansi pembumian dan soil resistivity</span></div>
+      <span class="prak-detail-toggle">▼</span>
+    </div>
+    <div class="prak-detail-body">
+      <div class="prak-tabs">
+        <button class="prak-tab active" data-tab="p6a">📖 Penjelasan</button>
+        <button class="prak-tab" data-tab="p6b">🔧 Perlengkapan</button>
+        <button class="prak-tab" data-tab="p6c">💬 Respons Umum</button>
+        <button class="prak-tab" data-tab="p6d">📁 Dokumen</button>
+      </div>
+      <div class="prak-tab-content active" data-content="p6a">
+        <div class="prak-info-grid">
+          <div class="prak-info-box"><h4>🎯 Tujuan</h4><ul><li>Mengukur resistansi pembumian dengan metode three-pole dan fall of potential</li><li>Mengukur resistivitas tanah dengan metode Wenner</li><li>Mengevaluasi efektivitas sistem grounding</li><li>Menghitung step dan touch voltage pada kondisi gangguan</li></ul></div>
+          <div class="prak-info-box"><h4>📚 Dasar Teori</h4><p>Sistem pembumian berfungsi menyalurkan arus gangguan ke bumi dengan aman. Resistansi pembumian yang rendah (&lt; 1 Ω untuk gardu induk, &lt; 5 Ω untuk gardu distribusi) memastikan tegangan sentuh dan langkah dalam batas aman sesuai standar IEEE 80.</p></div>
+          <div class="prak-info-box"><h4>⚙️ Prosedur</h4><ul><li>Ukur resistivitas tanah dengan metode Wenner (4-probe)</li><li>Ukur resistansi elektroda tunggal dan grid</li><li>Hitung resistansi grounding sistem menggunakan software CYMGRD</li><li>Evaluasi step dan touch voltage hasil simulasi</li></ul></div>
+          <div class="prak-info-box"><h4>⚠️ K3</h4><ul><li>Hindari pengukuran saat hujan lebat</li><li>Hati-hati terhadap tegangan induksi pada probe</li><li>Jauhkan probe dari kabel tegangan tinggi aktif</li><li>Gunakan tali insulasi untuk penempatan probe jauh</li></ul></div>
+        </div>
+      </div>
+      <div class="prak-tab-content" data-content="p6b">
+        <div class="prak-info-grid">
+          <div class="prak-info-box"><h4>🔌 Peralatan</h4><ul><li>Earth Resistance Meter (metode 3-pole dan 4-pole)</li><li>Soil Resistivity Meter (Wenner method)</li><li>Probe baja (4 probe, panjang 50 cm)</li><li>Kabel pengukur (min. 3 warna berbeda)</li><li>GPS untuk pemetaan lokasi</li></ul></div>
+          <div class="prak-info-box"><h4>🧪 Objek Pengukuran</h4><ul><li>Elektroda rod tunggal (copper-clad rod)</li><li>Elektroda plat (copper plate)</li><li>Grid grounding gedung teknik</li><li>Sistem grounding tiang distribusi</li></ul></div>
+          <div class="prak-info-box"><h4>🦺 APD</h4><ul><li>Sepatu safety</li><li>Sarung tangan kerja</li><li>Rompi reflektif (jika di area jalan)</li></ul></div>
+          <div class="prak-info-box"><h4>📋 Formulir</h4><ul><li>Tabel pengukuran resistivitas tanah (per jarak probe)</li><li>Lembar hasil resistansi pembumian</li><li>Form interpretasi data Wenner</li><li>Laporan evaluasi sistem grounding</li></ul></div>
+        </div>
+      </div>
+      <div class="prak-tab-content" data-content="p6c">
+        <div class="prak-info-grid">
+          <div class="prak-info-box"><h4>❓ FAQ</h4><ul><li><strong>Q: Berapa nilai resistansi grounding yang baik?</strong><br/>A: &lt; 1 Ω untuk gardu induk (IEEE 80), &lt; 5 Ω untuk gardu distribusi, &lt; 10 Ω untuk instalasi rumah (PUIL 2011).</li><li><strong>Q: Faktor apa yang mempengaruhi resistivitas tanah?</strong><br/>A: Kadar air, kandungan mineral, suhu, dan komposisi tanah (pasir, lempung, berbatu).</li></ul></div>
+          <div class="prak-info-box"><h4>📊 Nilai Tipikal</h4><ul><li>Tanah lempung basah: 5–100 Ω·m</li><li>Tanah pasir kering: 1000–3000 Ω·m</li><li>Batu kapur: 5000–10000 Ω·m</li><li>Area kampus Unhas (tipikal): 50–200 Ω·m</li></ul></div>
+          <div class="prak-info-box"><h4>⚡ Faktor Koreksi</h4><ul><li>Musim hujan: resistivitas tanah turun signifikan</li><li>Musim kemarau: resistivitas naik, grounding memburuk</li><li>Solusi: penambahan bentonite atau garam konduktif</li></ul></div>
+          <div class="prak-info-box"><h4>🔧 Troubleshooting</h4><ul><li>Hasil bervariasi besar → cek kontak probe dengan tanah</li><li>Nilai sangat tinggi → mungkin ada interferensi dari kabel bawah tanah</li><li>Pengukuran tidak stabil → jauhkan dari sumber EMI</li></ul></div>
+        </div>
+      </div>
+      <div class="prak-tab-content" data-content="p6d">
+        <p style="font-size:.88rem;color:var(--text-gray);margin-bottom:1.5rem">Akses dokumen praktikum Sistem Pembumian:</p>
+        <div class="gdrive-links-grid">
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📄</span> Jurnal Sistem Pembumian</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📋</span> Modul Praktikum</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📊</span> Template Laporan</a>
+          <a href="https://drive.google.com/your-link-here" target="_blank" class="gdrive-btn"><span class="gdrive-icon">📐</span> Lembar Data</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <div class="footer-top-bar"><a href="index.html" class="logo" style="color:white"><div class="logo-bolt">⚡</div><div class="logo-text" style="color:white">LAB TTT<span style="color:#60A5FA">UNHAS</span></div></a><a href="jurnal.html" class="footer-book-btn">AKSES JURNAL →</a></div>
+  <div class="footer-grid">
+    <div class="footer-col brand"><p>Laboratorium Teknik Tegangan Tinggi dan Infrastruktur Ketenagalistrikan — Departemen Teknik Elektro, Fakultas Teknik, Universitas Hasanuddin.</p><div class="footer-socials"><a href="#">FB</a><a href="#">IG</a><a href="#">YT</a><a href="#">📧</a></div></div>
+    <div class="footer-col"><h4>Navigasi</h4><a href="index.html" style="display:block;font-size:.82rem;color:#475569;margin-bottom:.4rem">Beranda</a><a href="about.html" style="display:block;font-size:.82rem;color:#475569;margin-bottom:.4rem">Tentang Lab</a><a href="praktikum.html" style="display:block;font-size:.82rem;color:#475569;margin-bottom:.4rem">Praktikum</a><a href="alat.html" style="display:block;font-size:.82rem;color:#475569;margin-bottom:.4rem">Alat Lab</a><a href="jurnal.html" style="display:block;font-size:.82rem;color:#475569;margin-bottom:.4rem">Jurnal & Dokumen</a></div>
+    <div class="footer-col"><h4>Modul Praktikum</h4><a href="#ttt-ac" style="display:block;font-size:.82rem;color:#475569;margin-bottom:.4rem">Tegangan Tinggi AC</a><a href="#ttt-dc" style="display:block;font-size:.82rem;color:#475569;margin-bottom:.4rem">Tegangan Tinggi DC</a><a href="#ttt-impuls" style="display:block;font-size:.82rem;color:#475569;margin-bottom:.4rem">Tegangan Impuls</a><a href="#partial-discharge" style="display:block;font-size:.82rem;color:#475569;margin-bottom:.4rem">Partial Discharge</a><a href="#proteksi" style="display:block;font-size:.82rem;color:#475569;margin-bottom:.4rem">Sistem Proteksi</a><a href="#grounding" style="display:block;font-size:.82rem;color:#475569;margin-bottom:.4rem">Sistem Pembumian</a></div>
+    <div class="footer-col"><h4>Kontak</h4><p>📍 Gedung Teknik Elektro Lt. 2, Unhas</p><p>📧 lab.ttt@eng.unhas.ac.id</p><p>📞 +62 411-587-032</p></div>
+    <div class="footer-col"><h4>Jam Operasional</h4><p>Senin – Jumat<br/>08.00 – 16.00 WITA</p></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 Lab Teknik Tegangan Tinggi — Universitas Hasanuddin</span><div class="footer-links-row"><a href="#">Kebijakan Privasi</a><a href="#">Sitemap</a></div></div>
+</footer>
+<script src="script.js"></script>
+</body></html>
